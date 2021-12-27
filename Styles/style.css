@@ -1,0 +1,101 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+body{
+    background-color: #222;
+    color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-image: url('../Images/pubg_background_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+}
+p{
+    position: relative;
+    bottom: 40px;
+}
+
+/* Select */
+#idElementsList{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#idPersonage, #idCar, #idWeapon{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    border-top: solid;
+    border-bottom: solid;
+    transition: 0.5s all;
+}
+
+/* Personage */
+#idPersonage{
+    height: 500px;
+    width: 300px;
+    background-image: url('../Images/pubg_per_4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+/* Car */
+#idCar{
+    height: 300px;
+    width: 500px;
+    background-image: url('../Images/pubg_car_6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+/* Weapon */
+#idWeapon{
+    height: 200px;
+    width: 200px;
+    background-image: url('../Images/pubg_weapon_5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    body{
+        background-position:top;
+        background-size: contain;
+        background-repeat: repeat;
+        flex-direction: column;
+    }
+
+    #idPersonage, #idCar, #idWeapon{
+        margin: 60px 0px;
+    }
+
+    #idPersonage{
+        height: 300px;
+        width: 300px;
+    }
+    #idCar{
+        height: 200px;
+        width: 200px;
+    }
+    #idWeapon{
+        height: 200px;
+        width: 200px;
+    }
+}
